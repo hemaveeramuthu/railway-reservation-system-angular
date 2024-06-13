@@ -1,0 +1,101 @@
+/* search.component.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-form form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Darker text color */
+}
+
+.search-form form select,
+.search-form form input[type="date"] {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin-bottom: 15px; /* Increased margin */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.search-form form select:focus,
+.search-form form input[type="date"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Blue glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.search-form form button {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    background-color: #e4b50e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem; /* Increased font size */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.search-form form button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.search-form form button:active {
+    background-color: #004085; /* Even darker blue on click */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    animation: shake 0.3s; /* Shake animation on error */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Reduced padding */
+    }
+
+    .search-form form select,
+    .search-form form input[type="date"] {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .search-form form button {
+        padding: 10px; /* Reduced padding */
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dashboard,
+.actions {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.dashboard h2,
+.actions h2 {
+    margin-top: 0;
+}
+
+.actions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.actions li {
+    margin-bottom: 10px;
+}
+
+.actions li a {
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.actions li a:hover {
+    background-color: #0056b3;
+}

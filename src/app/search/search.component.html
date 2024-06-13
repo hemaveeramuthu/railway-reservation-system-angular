@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>Search Trains</h1>
+    
+    <!-- Search Form -->
+    <div class="search-form">
+        <form (submit)="onSearch()">
+            <label for="origin">Origin:</label>
+            <select id="origin" name="origin" [(ngModel)]="origin">
+                <option value="">Select Origin</option>
+                <option value="Location 1">chennai</option>
+                <option value="Location 2">tambaram</option>
+                <option value="Location 3">katpadi junction</option>
+                <option value="Location 4">puratchi thalaivar Dr.MGR central</option>
+                <option value="Location 5">salem junction</option>
+                <option value="Location 6">erode junction</option>
+                <option value="Location 7">tiruppur</option>
+                <option value="Location 8">villupuram junction</option>
+                <option value="Location 9">perambur</option>
+                <option value="Location 10">avadi</option>
+            </select>
+            
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" [(ngModel)]="destination">
+                <option value="">Select Destination</option>
+                <option value="Location 1">avadi</option>
+                <option value="Location 2">perambur </option>
+                <option value="Location 3">villupuram junction</option>
+                <option value="Location 4">tiruppur</option>
+                <option value="Location 5">erode junction5</option>
+                <option value="Location 6">salem junction</option>
+                <option value="Location 7">puratchi thalaivar Dr.MGR central</option>
+                <option value="Location 8">katpadi junction</option>
+                <option value="Location 9">tambaram</option>
+                <option value="Location 10">chennai</option>
+            </select>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" [(ngModel)]="date">
+            
+            <button type="submit">Search</button>
+            <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+        </form>
+    </div>
+  
+    <!-- Search Results -->
+    <div class="search-results">
+        <!-- Display search results here -->
+    </div>
+</div>

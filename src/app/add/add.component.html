@@ -1,0 +1,20 @@
+<!-- add.component.html -->
+<div class="container">
+  <h1>Booking Details</h1>
+  
+  <div *ngFor="let booking of bookings; let i = index" class="booking-container">
+    <div class="booking-details">
+      <p><strong>Full Name:</strong> {{ booking.fullName }}</p>
+      <p><strong>Phone Number:</strong> {{ booking.phoneNumber }}</p>
+      <p><strong>Gender:</strong> {{ booking.gender }}</p>
+      <p><strong>Seat Type:</strong> {{ booking.seatType }}</p>
+      <p><strong>Age:</strong> {{ booking.age }}</p>
+    </div>
+    <button (click)="onRemove(i)">Remove</button>
+  </div>
+  
+  <div class="button-container">
+    <button (click)="onAddNew()">Add New Booking</button>
+    <button (click)="onGenerateBill()">Generate Bill</button> <!-- Add this button -->
+  </div>
+</div>

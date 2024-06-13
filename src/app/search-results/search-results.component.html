@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Search Results</h2>
+    <div class="train-list">
+      <div class="train-item" *ngFor="let train of trains">
+        <div class="train-details">
+          <p class="train-number">Train Number: {{ train.number }}</p>
+          <p class="train-name">Train Name: {{ train.name }}</p>
+        </div>
+        <button class="book-button" (click)="onBook(train.number)">Book</button>
+
+      </div>
+    </div>
+  </div>
+  

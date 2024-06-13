@@ -1,0 +1,79 @@
+/* search-result.component.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e6f7ff; /* Mild light blue background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h2 {
+  text-align: center;
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.train-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.train-item {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #b3e5fc; /* Mild light blue border color */
+  border-radius: 5px;
+  background-color: #ffffff; /* White background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.train-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly more prominent shadow */
+}
+
+.train-details {
+  margin-bottom: 10px;
+}
+
+.train-number, .train-name {
+  margin: 0;
+  color: #555; /* Slightly darker text color */
+}
+
+.book-button {
+  padding: 10px 20px; /* Increased padding */
+  background-color: #007bff; /* Primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.book-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.book-button:active {
+  background-color: #004080; /* Even darker blue on click */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .train-item {
+      width: 100%; /* Full width on smaller screens */
+  }
+}

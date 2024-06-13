@@ -1,0 +1,25 @@
+/* styles.css */
+
+/* Add some basic padding and margin to the body */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+
+  
+  /* Container styles */
+  .container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  

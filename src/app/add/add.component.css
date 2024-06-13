@@ -1,0 +1,53 @@
+/* add.component.css */
+
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  background-color: rgba(162, 152, 114, 0.5); /* Set the background color to semi-transparent white */
+}
+
+/* Individual booking container */
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 5px solid #fdfbf6;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px; /* Limit the width of the booking containers */
+  margin-bottom: 15px;
+}
+
+/* Booking details */
+.booking-details {
+  margin-bottom: 20px;
+}
+
+/* Remove button styling */
+.booking-container button {
+  background-color: rgba(220, 53, 69, 0.8); /* Transparent red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Add New Booking button */
+.button-container button {
+  background-color: rgba(0, 123, 255, 0.8); /* Transparent blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: rgba(0, 94, 179, 0.8); /* Darker shade on hover */
+}

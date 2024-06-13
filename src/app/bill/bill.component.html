@@ -1,0 +1,34 @@
+<!-- src/app/bill/bill.component.html -->
+<div class="container">
+  <h1>Booking Details and Bill</h1>
+  
+  <div *ngFor="let booking of bookings" class="booking-container">
+    <div class="booking-details">
+      <p><strong>Seat Number:</strong> {{ booking.seatNumber }}</p>
+      <p><strong>Full Name:</strong> {{ booking.fullName }}</p>
+      <p><strong>Phone Number:</strong> {{ booking.phoneNumber }}</p>
+      <p><strong>Gender:</strong> {{ booking.gender }}</p>
+      <p><strong>Seat Type:</strong> {{ booking.seatType }}</p>
+      <p><strong>Age:</strong> {{ booking.age }}</p>
+      <p><strong>Amount:</strong> Rs. {{ getSeatTypeAmount(booking.seatType) }}</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="total-amount">
+    <p><strong>Total Bill:</strong> Rs. {{ totalAmount }}</p>
+  </div>
+
+  <google-pay-button
+    environment="TEST"
+    buttonType="buy"
+    buttonColor="black"
+    [paymentRequest]="paymentRequest"
+    [style.width.px]="buttonWidth"
+    (loadpaymentdata)="onLoadPaymentData($event)"
+  ></google-pay-button>
+
+  <button (click)="onSaveBill()">Save Bill</button>
+  <button (click)="onBack()">Back</button>
+</div>

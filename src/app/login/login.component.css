@@ -1,0 +1,88 @@
+/* signup.component.css */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.1); /* Highly transparent white background */
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.signup-box {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  padding: 30px; /* Increased padding */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 350px; /* Slightly wider */
+  text-align: center;
+  animation: slideIn 0.8s ease-in-out; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px; /* More space between form groups */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px; /* Increased margin */
+  color: #555; /* Slightly darker text color */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px; /* Increased padding */
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 4px;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.form-group input:focus {
+  border-color: #0288d1; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  background-color: #f39e16; /* Green color for signup button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #aaaa0c; /* Darker shade of green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+  background-color: #a66e1b; /* Even darker green on click */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .signup-box {
+    width: 90%; /* Full width on smaller screens */
+    padding: 20px; /* Reduced padding */
+  }
+}

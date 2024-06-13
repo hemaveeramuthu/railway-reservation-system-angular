@@ -1,0 +1,93 @@
+/* CSS for form styling */
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Form */
+.booking-form {
+  margin-top: 2rem;
+}
+
+/* Labels */
+.booking-form label {
+  display: block;
+  margin-top: 1rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Inputs and Select */
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Error message */
+.booking-form small {
+  color: red;
+  font-size: 0.8rem;
+}
+
+/* Submit button */
+.booking-form button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+.booking-form button:active {
+  background-color: #004080;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .booking-form {
+    margin-top: 1rem;
+  }
+
+  .booking-form label {
+    margin-top: 0.5rem;
+  }
+
+  .booking-form button {
+    padding: 0.5rem;
+  }
+}

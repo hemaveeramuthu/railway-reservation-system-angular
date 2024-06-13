@@ -1,0 +1,23 @@
+/* Style for the navigation bar */
+.navbar {
+    background-color: #007bff; /* Change the background color */
+  }
+  
+  
+  .navbar-nav .nav-link {
+    color: #ffffff; /* Change the text color */
+  }
+  
+  /* Style for the container */
+  .container {
+    background-image: url("/assets/train.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height of the container to 100% of the viewport height */
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  
